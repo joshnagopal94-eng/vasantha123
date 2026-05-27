@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasantha H | BCA Student & Software Developer Portfolio</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Personal portfolio of Vasantha H, a passionate BCA student and software developer with 6 months of internship experience at Aikshethra. Specializing in C, Java, Python, PHP, and MySQL.">
+    <meta name="keywords" content="Vasantha H, Vasantha portfolio, BCA student, Aikshethra intern, software developer, web developer, PHP, MySQL, Gfgwc">
+    <meta name="author" content="Vasantha H">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vasantha H | BCA Student & Software Developer">
+    <meta property="og:description" content="Explore the portfolio of Vasantha H, featuring software projects, programming skills, and contact information.">
+    <meta property="og:image" content="profile.jpg">
+    
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Mouse Glow (Dynamic Backdrop) -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="logo-nav">
+                <span>V</span>asantha<span>.</span>
+            </a>
+            
+            <!-- Desktop Navbar -->
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="Vasantha_H_Resume.pdf" download class="btn btn-secondary nav-resume-btn">
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Resume
+                </a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Home (Hero) Section -->
+    <section class="section hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to my space</span>
+                <h1 class="hero-title">
+                    Hi, I am <br>
+                    <span class="highlight text-gradient">Vasantha H</span>
+                </h1>
+                <h2 class="hero-typing">
+                    I am a <span class="typing-text" id="typing-text">BCA Student</span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Student at Gfgwc. A quick learner passionate about software development, creative problem-solving, and building high-performance modern web applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Get In Touch <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    <a href="Vasantha_H_Resume.pdf" download class="btn btn-outline">
+                        Download Resume <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:vasanthahk83@gmail.com" aria-label="Email" class="social-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="profile-card-glow"></div>
+                <div class="profile-card">
+                    <!-- Standard fallback to SVG avatar if profile.jpg is missing or still copying -->
+                    <img src="profile.jpg" alt="Vasantha H Profile" class="profile-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23080c14%22/><circle cx=%2250%22 cy=%2240%22 r=%2220%22 fill=%22%2300d2ff%22 opacity=%220.6%22/><path d=%22M20,85 C20,65 30,55 50,55 C70,55 80,65 80,85%22 fill=%22%2300d2ff%22 opacity=%220.4%22/><text x=%2250%22 y=%2293%22 font-family=%22sans-serif%22 font-size=%228%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 opacity=%220.7%22>BCA Student</text></svg>';">
+                    <div class="profile-info-badge">
+                        <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h4>BCA Student</h4>
+                            <p>GFGWC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Discover</span>
+                <h3 class="main-heading">About Me</h3>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info-panel">
+                    <h4 class="about-title">Software Developer & Student</h4>
+                    <p class="about-text">
+                        I am a dedicated <strong>BCA student</strong> with 6 months of hands-on internship experience at <strong>Aikshethra</strong>. I thrive in dynamic environments and pride myself on being an exceptionally quick learner who adapts easily to fast-paced industry workflows.
+                    </p>
+                    <p class="about-text">
+                        My journey in technology is driven by an intense passion for software development and structured problem-solving. I am committed to creating systems that are not only functional but also highly optimized, responsive, and intuitive.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">6+</span>
+                            <span class="stat-label">Months Internship</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">1+</span>
+                            <span class="stat-label">Key Projects Done</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">8+</span>
+                            <span class="stat-label">Tech Skills Mastery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-cards-grid">
+                    <div class="about-card">
+                        <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h5>Quick Learner</h5>
+                        <p>Easily absorb complex frameworks, paradigms, and libraries to deliver high-quality code rapidly.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h5>Passionate Dev</h5>
+                        <p>Dedicated to structured code, modular design, and constantly improving software user experiences.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h5>Problem Solver</h5>
+                        <p>Analytical thinker with a strong foundational grip on algorithms, object-oriented concepts, and relational databases.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h5>Aikshethra Alum</h5>
+                        <p>Worked under expert guidance during a 6-month hands-on internship, gaining valuable commercial-grade insight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">My Expertise</span>
+                <h3 class="main-heading">Skills & Tech</h3>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Group 1: Programming Languages -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h4>Programming Languages</h4>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C (Basics)</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Web & Databases -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h4>Web & Databases</h4>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP (Backend)</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL (Databases)</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Badge Showcase -->
+            <div class="skills-badges">
+                <span class="badge"><i class="fa-brands fa-java text-blue"></i> Java</span>
+                <span class="badge"><i class="fa-brands fa-python text-blue"></i> Python</span>
+                <span class="badge"><i class="fa-solid fa-code text-blue"></i> C++</span>
+                <span class="badge"><i class="fa-solid fa-hashtag text-blue"></i> C#</span>
+                <span class="badge"><i class="fa-brands fa-php text-blue"></i> PHP</span>
+                <span class="badge"><i class="fa-solid fa-database text-blue"></i> MySQL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">My Creations</span>
+                <h3 class="main-heading">Featured Projects</h3>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Project 1 Card -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="visual-placeholder">
+                            <!-- Premium Custom CSS/SVG Mockup of Restaurant Table Booking -->
+                            <svg viewBox="0 0 400 220" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="svg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0a192f"/>
+                                        <stop offset="50%" stop-color="#112240"/>
+                                        <stop offset="100%" stop-color="#0052cc"/>
+                                    </linearGradient>
+                                    <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00d2ff"/>
+                                        <stop offset="100%" stop-color="#0066ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="220" fill="url(#svg-grad)" rx="10"/>
+                                <!-- Mock UI Header -->
+                                <rect x="20" y="20" width="360" height="30" fill="#233554" rx="5" opacity="0.6"/>
+                                <circle cx="35" cy="35" r="4" fill="#ff5f56"/>
+                                <circle cx="47" cy="35" r="4" fill="#ffbd2e"/>
+                                <circle cx="59" cy="35" r="4" fill="#27c93f"/>
+                                <text x="200" y="40" font-family="'Outfit', sans-serif" font-size="11" fill="#8892b0" text-anchor="middle" font-weight="600">Restaurant Booking System</text>
+                                
+                                <!-- Mock UI Body (Table layout representation) -->
+                                <circle cx="200" cy="130" r="35" fill="none" stroke="url(#neon-grad)" stroke-width="2" stroke-dasharray="4,4"/>
+                                <circle cx="200" cy="130" r="25" fill="#112240"/>
+                                <text x="200" y="134" font-family="'Outfit', sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">TABLE 04</text>
+                                
+                                <!-- Surrounding Chair Nodes representing booking -->
+                                <circle cx="150" cy="130" r="10" fill="#00d2ff" opacity="0.8"/>
+                                <circle cx="250" cy="130" r="10" fill="#00d2ff" opacity="0.8"/>
+                                <circle cx="200" cy="80" r="10" fill="#27c93f"/> <!-- Available -->
+                                <circle cx="200" cy="180" r="10" fill="#ff5f56"/> <!-- Booked -->
+                                
+                                <!-- Details Panel overlay -->
+                                <rect x="30" y="70" width="100" height="110" fill="#0a192f" rx="6" stroke="#233554" stroke-width="1"/>
+                                <text x="40" y="90" font-family="sans-serif" font-size="8" fill="#57cbff" font-weight="bold">RESERVATION</text>
+                                <text x="40" y="110" font-family="sans-serif" font-size="7" fill="#ffffff">User: Vasantha</text>
+                                <text x="40" y="125" font-family="sans-serif" font-size="7" fill="#ffffff">Guests: 4</text>
+                                <text x="40" y="140" font-family="sans-serif" font-size="7" fill="#ffffff">Time: 7:00 PM</text>
+                                <rect x="40" y="153" width="55" height="15" fill="#27c93f" rx="3"/>
+                                <text x="67" y="163" font-family="sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">CONFIRMED</text>
+                            </svg>
+                        </div>
+                        <div class="project-tags">
+                            <span class="p-tag">PHP</span>
+                            <span class="p-tag">MySQL</span>
+                            <span class="p-tag">Full-Stack</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">Restaurant Table Booking System</h4>
+                        <p class="project-desc">
+                            A dynamic web application built to streamline dining operations. It enables users to browse available dining layouts, securely register and authenticate, book specific dining tables in real-time, and generates instantly updated reservation summaries.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fa-solid fa-circle-check text-blue"></i> Secure User Login & Authentication</li>
+                            <li><i class="fa-solid fa-circle-check text-blue"></i> Dynamic Real-time Table Reservation Management</li>
+                            <li><i class="fa-solid fa-circle-check text-blue"></i> Instantly Generated Booking Summaries & Results</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm disabled-link" title="Local deployment only">
+                                <i class="fa-solid fa-external-link"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Future Projects Info Glassmorphism Board -->
+            <div class="projects-callout">
+                <div class="callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="callout-text">
+                    <h4>More Projects in Development</h4>
+                    <p>I am continuously designing new software systems and applications using Java, Python, and C#. Keep an eye out for updates!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Action Strip -->
+    <section class="section resume-strip">
+        <div class="container strip-container">
+            <div class="strip-text">
+                <h3>Interested in working together?</h3>
+                <p>Download my comprehensive professional resume to review my qualifications in detail.</p>
+            </div>
+            <a href="Vasantha_H_Resume.pdf" download class="btn btn-primary pulse-btn">
+                Download Full Resume <i class="fa-solid fa-file-pdf"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Get in Touch</span>
+                <h3 class="main-heading">Contact Me</h3>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h4 class="contact-title">Let's Connect</h4>
+                    <p class="contact-intro">
+                        I am always open to discussing new software development opportunities, internship roles, collaborations, or even technical problem-solving! Feel free to reach out.
+                    </p>
+                    
+                    <div class="info-list">
+                        <!-- Email Card -->
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <span>Email Me</span>
+                                <a href="mailto:vasanthahk83@gmail.com">vasanthahk83@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone Card -->
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="info-text">
+                                <span>Call Me</span>
+                                <a href="tel:+919676420783">+91 96764 20783</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Location Card -->
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-text">
+                                <span>Location</span>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form Card -->
+                <div class="contact-form-wrapper">
+                    <form action="#" class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Project Collaboration">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Hi Vasantha, I'd like to collaborate..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Banner -->
+                    <div class="form-success-banner" id="form-success-banner">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>Message Sent Successfully!</h4>
+                        <p>Thank you for reaching out. I'll get back to you as soon as possible!</p>
+                        <button class="btn btn-outline btn-sm reset-form-btn" id="reset-form-btn">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo"><span>V</span>asantha<span>.</span></a>
+                <p>BCA Student & Aspiring Software Engineer</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:vasanthahk83@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vasantha H. All rights reserved. | Handcrafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
